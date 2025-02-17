@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import subprocess
 
 # Token del bot (obtén el token de @BotFather en Telegram)
-TOKEN = "7852580657:AAEXo_cAGjiCO3NW6SSGHMrod0K3nfpE7WQ"
+TOKEN = "7593972470:AAHYacOqAwvUsaDC2HhyzRa4El_LuXzEc3I"
 
 # Lista de chats autorizados
 allowed_chats = ['-1002362295139']  # Reemplaza con los IDs de los chats autorizados
