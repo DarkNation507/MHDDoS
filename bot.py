@@ -19,7 +19,7 @@ async def udp_attack(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Verifica que el usuario haya ingresado los parámetros necesarios
     if len(context.args) < 3:
         await update.message.reply_text(
-            "👑 Created By LitDarKrx 👑\n\n⚙️Example: /attack <IP:PORT> <Duration> <Threads>\n✅ Send To Activate: /attack 143.92.114.176:10015 53 999 "
+            "👑 Created By LitDarKrx 👑\n\n⚙️Example: \n\n/attack <IP:PORT> <Duration> <Threads>\n\n✅ Send To Activate:\n\n /attack 143.92.114.176:10015 53 999 "
         )
         return
 
