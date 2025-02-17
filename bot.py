@@ -46,7 +46,7 @@ def main():
     application = Application.builder().token(TOKEN).build()
 
     # Agrega el handler para el comando /udp
-    application.add_handler(CommandHandler("udp", udp_attack))
+    application.add_handler(CommandHandler("attack", udp_attack))
 
     # Inicia el bot
     application.run_polling()
